@@ -1,9 +1,12 @@
-let number = 266219;
-let arrayNumber = ("" + number).split("").map(Number);
-let sum = 1;
-for (let i = 0; i < arrayNumber.length; i++) {
-    sum *= arrayNumber[i];
-}
-sum = sum ** 3;
-let arraySum = ("" + sum).split("").map(Number);
-console.log(arraySum[0] + '' + arraySum[1]); 
+let lang = prompt('На каком языке вывести дни недели?');
+let weekdays = {
+    ru: ['понедельник, вторник, среда, четверг, пятница, суббота, воскресенье'],
+    en: ['Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday']
+};
+console.log(weekdays[lang].toString());
+
+let namePerson = prompt("Имя");
+let personPosition = namePerson == "Артем" ? "директор" :
+    namePerson == "Александр" ? "преподаватель" :
+    "студент";
+console.log(personPosition);
