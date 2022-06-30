@@ -12,4 +12,5 @@ function getArgument() {
 }
 
 argument = prompt("Введите строку");
+
 console.log(getArgument());
